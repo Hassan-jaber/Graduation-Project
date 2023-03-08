@@ -36,19 +36,19 @@ a:hover {
 /* End Global Rules */
 /* Start login form */
 .login-form > :first-child {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
-  color: var(--main-text-alt);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
 }
 .login-form > :nth-child(2) {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: var(--main-text-color);
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  color: var(--main-text-alt);
 }
 form {
-  height: 421px;
   width: 538px;
 }
 form .input-group {
@@ -60,23 +60,28 @@ form .input-group {
   border: none;
   border-radius: 0px;
   transition: none !important;
-  height: 42px;
+  height: 35px;
 }
 .form-control:focus {
   box-shadow: none !important;
   border-color: var(--min-btn-color);
 }
-
+.civil-registry-input,
+.family-number-input,
+.full-name-input,
 .phone-input,
 .password-input {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 42px;
+  height: 35px;
   border-bottom: 1px solid rgba(57, 58, 88, 0.15);
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   position: relative;
 }
+.civil-registry-input i,
+.family-number-input i,
+.full-name-input i,
 .phone-input i,
 .password-input i {
   color: #c1c3cd;
@@ -86,10 +91,7 @@ form .input-group {
 .password-input img {
   opacity: 0.5;
 }
-.forgot-password {
-  color: var(--main-text-color);
-  margin-bottom: 35px;
-}
+
 .submit {
   height: 52px;
   text-align: center;
@@ -101,10 +103,8 @@ form .input-group {
   border: none;
 }
 .register {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 30px;
+  margin-top: 25px;
+  text-align: center;
 }
 .register a {
   color: var(--main-text-color);
@@ -112,29 +112,21 @@ form .input-group {
   font-size: 14px;
   margin-bottom: 0;
 }
-.line {
-  width: 150px;
-  height: 1px;
-  background-color: rgba(57, 58, 88, 0.15);
-}
-.register-as {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 33px;
-}
-.register-as a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 52px;
-  width: 251px;
-  border-radius: 12px;
-  border: 1px solid #6cb2b8;
-  border-radius: 12px;
-  font-weight: 700;
+
+.agree-label {
+  font-weight: 400;
   font-size: 14px;
-  color: #6cb2b8;
+  line-height: 15px;
+  color: #434f56;
+}
+#agree {
+  width: 22px;
+  height: 22px;
+}
+.checkbox-agree {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
 }
 .login-img img {
   width: 550px;
@@ -150,12 +142,7 @@ form .input-group {
     width: 90%;
     margin: 0 auto;
   }
-  .line {
-    width: 50px;
-  }
-  .register-as a {
-    width: 145px;
-  }
+
   .logo,
   .login-form > :first-child,
   .login-form > :nth-child(2) {
