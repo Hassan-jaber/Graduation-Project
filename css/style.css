@@ -1,5 +1,5 @@
 /* import "Noto Sans Arabic" font */
-@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&family=Cairo:wght@200;300;400;500;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mada:wght@200;300;400;500;600;700;900&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&family=Outfit:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&family=Cairo:wght@200;300;400;500;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mada:wght@200;300;400;500;600;700;900&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&family=Outfit:wght@100;200;300;400;500;600;700&display=swap");
 /* Start Global Rules */
 * {
   -moz-box-sizing: border-box;
@@ -7,9 +7,9 @@
   box-sizing: border-box;
 }
 :root {
-  /* --main-color: #6CB2B8;
-  --main-color-alt: #1787e0; */
-  --min-btn-color: #6CB2B8;
+  --main-text-color: #393a58;
+  --main-text-alt: #707070;
+  --min-btn-color: #6cb2b8;
   --main-transition: 0.3s;
 }
 html {
@@ -18,8 +18,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Noto Sans Arabic', sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
   background-color: #f8f9fd;
+  height: 100vh;
 }
 ul {
   list-style: none;
@@ -29,4 +30,132 @@ ul {
 a {
   text-decoration: none;
 }
+a:hover {
+  color: var(--main-text-color);
+}
 /* End Global Rules */
+/* Start login form */
+.login-form > :first-child {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--main-text-alt);
+}
+.login-form > :nth-child(2) {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--main-text-color);
+}
+form {
+  height: 421px;
+  width: 538px;
+}
+form .input-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-control {
+  background-color: transparent !important;
+  border: none;
+  border-radius: 0px;
+  transition: none !important;
+  height: 42px;
+}
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: var(--min-btn-color);
+}
+
+.phone-input,
+.password-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  border-bottom: 1px solid rgba(57, 58, 88, 0.15);
+  margin-bottom: 35px;
+  position: relative;
+}
+.phone-input i,
+.password-input i {
+  color: #c1c3cd;
+}
+.password-input img {
+  opacity: 0.5;
+}
+.forgot-password {
+  color: var(--main-text-color);
+  margin-bottom: 35px;
+}
+.submit {
+  height: 52px;
+  text-align: center;
+  background: #6cb2b8;
+  border-radius: 12px !important;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+}
+.register {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.register a {
+  color: var(--main-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.line {
+  width: 150px;
+  height: 1px;
+  background-color: rgba(57, 58, 88, 0.15);
+}
+.register-as {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 33px;
+}
+.register-as a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  width: 251px;
+  border-radius: 12px;
+  border: 1px solid #6cb2b8;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #6cb2b8;
+}
+.login-img img {
+  width: 550px;
+  height: 550px;
+}
+@media (max-width: 1199px) {
+  .login-img {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .line {
+    width: 50px;
+  }
+  .register-as a {
+    width: 145px;
+  }
+  .logo,.login-form>:first-child,.login-form>:nth-child(2){
+    margin-right: 5%;
+  }
+}
+/* End login form */
