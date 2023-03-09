@@ -19,21 +19,64 @@
                 <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
             </div>
             <p class="page-title">سيتم عرض الجهات الخيرية وفقاً للمدينة</p>
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">اختر الحي</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li>حي الرويس</li>
+                                <li>حي الربوة</li>
+                                <li>حي الفيحاء</li>
+                                <li>حي الروضة</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"> 
+                                تحديد</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+                tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Hide this modal and show the first with the button below.
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
+                                first</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <ul class="city row mt-5">
-                <a class="col-6 col-lg-2 col-md-4" href="#"><li class=""> جدة </li></a>
-                <a class="col-6 col-lg-2 col-md-4 active" href="#"><li> المدينة </li></a>
-                <a class="col-6 col-lg-2 col-md-4" href="#"><li class=""> الطائف </li></a>
-                <a class="col-6 col-lg-2 col-md-4" href="#"><li class=""> مكة </li></a>
-                <a class="col-6 col-lg-2 col-md-4" href="#"><li class=""> حائل </li></a>
-                <a class="col-6 col-lg-2 col-md-4" href="#"><li class=""> ابها </li></a>
-                <a class="col-6 col-lg-2 col-md-4" href="#"><li class=""> عسير </li></a>
-                <a class="col-6 col-lg-2 col-md-4" href="#"><li class=""> جدة </li></a>
-                <a class="col-6 col-lg-2 col-md-4" href="#"><li class=""> الدمام </li></a>
-                <a class="col-6 col-lg-2 col-md-4" href="#"><li class=""> تبوك </li></a>
-                <a class="col-6 col-lg-2 col-md-4" href="#"><li class=""> خميس مشيط </li></a>
-                <a class="col-6 col-lg-2 col-md-4" href="#"><li class=""> اخرى </li></a>
+                <a class="col-6 col-lg-2 col-md-4"  data-bs-target="#exampleModalToggle" data-bs-toggle="modal" href="#"> <li class=""> جدة </li> </a>
+                <a class="col-6 col-lg-2 col-md-4  active"  data-bs-target="#exampleModalToggle" data-bs-toggle="modal" href="#"><li> المدينة </li></a>
+                <a class="col-6 col-lg-2 col-md-4" href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" ><li class=""> الطائف </li></a>
+                <a class="col-6 col-lg-2 col-md-4" href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" ><li class=""> مكة </li></a>
+                <a class="col-6 col-lg-2 col-md-4" href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" ><li class=""> حائل </li></a>
+                <a class="col-6 col-lg-2 col-md-4" href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" ><li class=""> ابها </li></a>
+                <a class="col-6 col-lg-2 col-md-4" href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" ><li class=""> عسير </li></a>
+                <a class="col-6 col-lg-2 col-md-4" href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" ><li class=""> جدة </li></a>
+                <a class="col-6 col-lg-2 col-md-4" href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" ><li class=""> الدمام </li></a>
+                <a class="col-6 col-lg-2 col-md-4" href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" ><li class=""> تبوك </li></a>
+                <a class="col-6 col-lg-2 col-md-4" href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" ><li class=""> خميس مشيط </li></a>
+                <a class="col-6 col-lg-2 col-md-4" href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" ><li class=""> اخرى </li></a>
             </ul>
         </div>
+        <script src="../js/bootstrap.bundle.min.js"></script>
         <script src="../js/main.js"></script>
 </body>
 </html>
